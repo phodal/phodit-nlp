@@ -1,0 +1,19 @@
+{
+  "name": "phodit-nlp",
+  "version": "0.0.0",
+  "description": "A Package for Phodal's Articles analyses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phodal/phodit-nlp.git"
+  },
+  "author": "Phodal HUANG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phodal/phodit-nlp/issues"
+  },
+  "homepage": "https://github.com/phodal/phodit-nlp#readme"
+}
