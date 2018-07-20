@@ -386,6 +386,12 @@ node-pre-gyp@^0.10.3:
     semver "^5.3.0"
     tar "^4"
 
+nodejieba@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/nodejieba/-/nodejieba-2.2.6.tgz#17cd416705b7b01c062e6cd9d7179b30453eb4a3"
+  dependencies:
+    nan "~2.10.0"
+
 nopt@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/nopt/-/nopt-4.0.1.tgz#d0d4685afd5415193c8c7505602d0d17cd64474d"

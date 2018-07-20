@@ -19,5 +19,8 @@
   "homepage": "https://github.com/phodal/phodit-nlp#readme",
   "devDependencies": {
     "sqlite-json": "^1.1.0"
+  },
+  "dependencies": {
+    "nodejieba": "^2.2.6"
   }
 }
