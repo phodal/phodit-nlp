@@ -21,6 +21,7 @@
     "sqlite-json": "^1.1.0"
   },
   "dependencies": {
+    "lunr": "^2.3.0",
     "nodejieba": "^2.2.6"
   }
 }

@@ -1,10 +1,14 @@
-let nodejieba = require("nodejieba");
-nodejieba.load();
-
-let topN = 1000;
 let data = require('./output.json');
-let allPosts = '';
-for (let item of data) {
-  allPosts = allPosts + item.content;
-}
-console.log(JSON.stringify(nodejieba.extract(allPosts, topN)));
+let lunr = require('lunr');
+
+let idx = lunr(function () {
+  this.field('title');
+  this.field('content');
+
+  for (let item of data) {
+    this.add(item)
+  }
+});
+
+let searchResults = idx.search("www");
+console.log(searchResults);
