@@ -1,16 +1,18 @@
 let data = require('./output.json');
-let elasticlunr = require('elasticlunr');
+let lunr = require('lunr');
 
-var index = elasticlunr(function () {
-  this.addField('title');
-  this.addField('content');
-  this.setRef('id');
+console.log(new Date());
+
+let idx = lunr(function () {
+  this.field('title', { boost: 10 });
+  this.field('content');
+
+  for (let item of data) {
+    this.add(item);
+  }
 });
 
-for (let item of data) {
-  // console.log(item);
-  index.addDoc(item);
-}
+console.log(new Date());
 
-let searchResults = index.search("我们");
+let searchResults = idx.search("微前端");
 console.log(searchResults);

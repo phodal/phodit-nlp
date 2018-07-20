@@ -21,8 +21,7 @@
     "sqlite-json": "^1.1.0"
   },
   "dependencies": {
-    "elasticlunr": "^0.9.5",
-    "lunr": "^2.3.0",
+    "lunr": "https://github.com/codepiano/lunr.js",
     "nodejieba": "^2.2.6"
   }
 }

@@ -143,10 +143,6 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
 
-elasticlunr@^0.9.5:
-  version "0.9.5"
-  resolved "https://registry.yarnpkg.com/elasticlunr/-/elasticlunr-0.9.5.tgz#65541bb309dddd0cf94f2d1c8861b2be651bb0d5"
-
 extend@~3.0.1:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
@@ -316,9 +312,11 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
-lunr@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/lunr/-/lunr-2.3.0.tgz#4d7c0ca12bdd1e0447b0c131b91420929740c88f"
+"lunr@https://github.com/codepiano/lunr.js":
+  version "0.7.1"
+  resolved "https://github.com/codepiano/lunr.js#7622590806fde24d74c80903baec8d5787ca7ad6"
+  dependencies:
+    nodejieba "^2.0.0"
 
 mime-db@~1.35.0:
   version "1.35.0"
@@ -394,7 +392,7 @@ node-pre-gyp@^0.10.3:
     semver "^5.3.0"
     tar "^4"
 
-nodejieba@^2.2.6:
+nodejieba@^2.0.0, nodejieba@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/nodejieba/-/nodejieba-2.2.6.tgz#17cd416705b7b01c062e6cd9d7179b30453eb4a3"
   dependencies:
