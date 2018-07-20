@@ -4,6 +4,7 @@
   "description": "A Package for Phodal's Articles analyses",
   "main": "index.js",
   "scripts": {
+    "gen": "yarn sqlite-json dev.db -t blog_blogpost -o output.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/phodal/phodit-nlp/issues"
   },
-  "homepage": "https://github.com/phodal/phodit-nlp#readme"
+  "homepage": "https://github.com/phodal/phodit-nlp#readme",
+  "devDependencies": {
+    "sqlite-json": "^1.1.0"
+  }
 }
