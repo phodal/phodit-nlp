@@ -16,9 +16,17 @@ let idx = lunr(function () {
 
 console.log(new Date());
 
-let searchResults = idx.search("微前端");
+let searchText = "微前端";
+let searchResults = idx.search(searchText);
 console.log(searchResults);
 
 for (let result of searchResults) {
-  console.log(dataWithIndex[result.ref].title);
+  // console.log(dataWithIndex[result.ref].title);
+  let replaceContent = dataWithIndex[result.ref].content.replace(/\n/g, '');
+  let content = replaceContent.split(/[，。；！]+/);
+  for (let sentence of content) {
+    if (sentence.includes(searchText)) {
+      console.log(sentence, searchText);
+    }
+  }
 }
